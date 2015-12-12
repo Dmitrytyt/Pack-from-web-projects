@@ -1,14 +1,16 @@
 {
-  "name": "project.ru",
+  "name": "Pack-from-web-projects",
   "version": "0.1.0",
   "description": "web-pack-project",
   "main": "index.js",
+  "repository": "https://github.com/Dmitrytyt/Pack-from-web-projects.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "dmitrytyt <dmitrytyt@ya.ru>",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.7"
   }
 }
