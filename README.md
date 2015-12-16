@@ -7,7 +7,7 @@
 ## Project installation on your computer
 ```
    required: ruby
-   1. git clone https://github.com/DoYouLikeOrigami/Loftschool-Teamwork.git  WatermarkGenerator
+   1. git clone https://github.com/Dmitrytyt/Pack-from-web-projects.git
    2. cd WatermarkGenerator
    3. gem i compass
    4. gem i sass-globbing

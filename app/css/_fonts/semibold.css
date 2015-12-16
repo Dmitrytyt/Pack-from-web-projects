@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url("../../fonts/semibold/opensans_semibold-webfont.eot");
+  src: url("../../fonts/semibold/opensans_semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/semibold/opensans_semibold-webfont.woff2") format("woff2"), url("../../fonts/semibold/opensans_semibold-webfont.woff") format("woff"), url("../../fonts/semibold/opensans_semibold-webfont.ttf") format("truetype"), url("../../fonts/semibold/opensans_semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

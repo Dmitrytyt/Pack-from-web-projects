@@ -1,0 +1,57 @@
+include _common/_mixins
+
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title
+			block title
+		meta(name="description" content="Shot description")
+		meta(name="keywords" content="keys")
+		meta(name="author" content="Author")
+		+favicon("/img/favicon/")
+
+		//bower:css
+		link(rel='stylesheet', href='../bower/bootstrap/dist/css/bootstrap.css')
+		//endbower
+
+		//build:css css/main.css
+		link(rel='stylesheet', href='css/main.css')
+		//endbuild
+
+		script(src="/bower/modernizer/modernizr.js")
+
+	body
+		.wrapper
+			.maincontent
+
+				include _common/_header
+
+				+nav('navigation', ['Главная'], 1)
+
+				.content-wrapper
+					.container
+						include _common/_breadcrumb
+						block h1
+
+						.content
+							.content__inner
+								block content
+
+						h2.seo-content__title
+							| Важная информация
+						.seo-content
+							p.seo-content__item
+								| Повседневная   практика   показывает ,  что   сложившаяся   структура   организации
+								| представляет  собой  интересный эксперимент проверки дальнейших направлений прогрессивного развития.
+
+		include _common/_footer
+
+		//build:js js/main.js
+		//bower:js
+		script(src='../bower/jquery/dist/jquery.js')
+		script(src='../bower/bootstrap/dist/js/bootstrap.js')
+		//endbower
+		//endbuild

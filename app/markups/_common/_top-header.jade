@@ -1,0 +1,9 @@
+.top-header
+    .container
+        ul.socials__list
+            - var socials = ['vk', 'fb', 'tw']
+            each social in socials
+                li.socials__item
+                    a(href="#" class="socials__link socials__link_" + social)
+                        i.hide
+                            | #{social}

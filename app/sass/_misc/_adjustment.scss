@@ -1,0 +1,63 @@
+/* --------- adjustment --------- */
+
+$container-width    : 1100px;
+$footer-height      : 50px;
+$body-font          : open_sanssemibold, Arial, Helvetica, sans-serif;
+$first-color        : #ff6600;
+
+html {
+	width:100%;
+	height:100%;
+	font-size: 100.01%;
+}
+
+body {
+	font: 14px/1.41 $body-font;
+    -webkit-font-smoothing: antialiased;
+	width:100%;
+	height:100%;
+    background: #f4f4f4;
+}
+
+.container {
+    width: $container-width;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    color: #5db2fc;
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+	list-style: none outside none;
+
+	li {
+        padding: 0;
+        left: 0;
+    }
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+
+}

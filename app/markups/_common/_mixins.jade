@@ -1,0 +1,24 @@
+mixin nav(className, items, activeIndx)
+	nav(class= className)
+		.container
+			ul(class= className + "__list")
+				each item, indx in items
+					li(class=className + "__item " + ((activeIndx == indx) ? className + '__item' + '_active' : ''))
+						a(href="#" class= className + "__link")= item
+
+mixin favicon(path)
+	- var appleSizes = ['57x57', '60x60', '72x72', '76x76', '114x114', '120x120', '144x144', '152x152', '180x180']
+	- var iconSizes  = ['32x32', '96x96', '16x16']
+
+	each size in appleSizes
+		link(rel="apple-touch-icon" sizes=size href=path + 'apple-icon-' + size + '.png')
+
+	link(rel="icon" type="image/png" sizes="192x192"  href=path + "android-icon-192x192.png")
+
+	each size in iconSizes
+		link(rel="icon" type="image/png" sizes=size href=path + "favicon-" + size + ".png")
+
+	link(rel="manifest" href="/img/favicon/manifest.json")
+	meta(name="msapplication-TileColor" content="#ffffff")
+	meta(name="msapplication-TileImage" content=path + "ms-icon-144x144.png")
+	meta(name="theme-color" content="#ffffff")

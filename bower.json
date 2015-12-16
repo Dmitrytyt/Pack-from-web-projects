@@ -1,3 +1,25 @@
 {
-  "name" : "Pack from web-projects"
+  "name": "Pack from web-projects",
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "fancybox": "~2.1.5",
+    "modernizr": "~3.2.0"
+  },
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "fancybox": "~2.1.5",
+    "modernizr": "~3.2.0",
+    "bootstrap": "~3.3.6"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "./dist/css/bootstrap.css",
+        "./dist/js/bootstrap.js"
+      ],
+      "dependencies": {
+        "jquery": "1.9.1 - 2"
+      }
+    }
+  }
 }

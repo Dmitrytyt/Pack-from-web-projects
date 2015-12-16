@@ -1,0 +1,13 @@
+nav.pagination
+    ul.pagination__list
+        li.pagination__item
+            a.pagination__link-previous(href="#")
+                | <
+        - var links = ['1', '2', '3']
+        each link, ind in links
+            li.pagination__item
+                a(class="pagination__link " + ((0 == ind) ? 'pagination__link_active' : ''), href="#")
+                    | #{link}
+        li.pagination__item
+            a.pagination__link-next(href="#")
+                | >

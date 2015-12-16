@@ -1,0 +1,19 @@
+$socials: (vk,vk-hover), (tw,tw-hover), (fb,fb-hover);
+$socials-map: sprite-map('icons/*.png', $spacing: 10px);
+
+@each $social,$hover in $socials {
+  .socials__link_#{$social} {
+    @include get-sprite($socials-map, $social);
+    &:hover {
+      @include get-sprite($socials-map, $hover);
+      transition: all 0.2s ease-in-out 0s;
+    }
+  }
+}
+
+.header {
+
+
+}
+
+

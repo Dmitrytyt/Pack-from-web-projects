@@ -1,0 +1,5 @@
+ol.breadcrumbs
+    - var links = ['Главная', 'Каталог']
+    each link, ind in links
+        li(class="breadcrumbs__item")
+            a(class="breadcrumbs__link " + ((1 == ind) ? 'breadcrumbs__link_active' : ''), href="#")= link
